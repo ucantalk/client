@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabbar_content_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_border"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btn_container_chatroom_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/tab_btn_chatroom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_item_bg"
+                android:drawablePadding="-2dip"
+                android:drawableTop="@drawable/tab_chatroom_bg"
+                android:onClick="onTabBtnClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="5dip"
+                android:scaleType="matrix"
+                android:text="@string/bottom_btn_chatroom"
+                android:textColor="@color/botton_text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_find_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/tab_btn_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_item_bg"
+                android:drawablePadding="-2dip"
+                android:drawableTop="@drawable/tab_find_bg"
+                android:onClick="onTabBtnClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="5dip"
+                android:scaleType="matrix"
+                android:text="@string/bottom_btn_find"
+                android:textColor="@color/botton_text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/btn_container_group_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/tab_btn_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_item_bg"
+                android:drawablePadding="-2dip"
+                android:drawableTop="@drawable/tab_group_bg"
+                android:onClick="onTabBtnClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="5dip"
+                android:scaleType="matrix"
+                android:text="@string/bottom_btn_group"
+                android:textColor="@color/botton_text_color"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/tip_new"
+                android:layout_width="15dp"
+                android:layout_height="5dp"
+                android:onClick="onTabBtnClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="5dip" 
+                android:layout_toLeftOf="@id/tab_btn_group"
+                android:src="@drawable/icon_update_point"/>
+        </RelativeLayout>
+
+        
+
+            <RelativeLayout
+                android:id="@+id/btn_container_setting_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/tab_btn_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom_item_bg"
+                    android:drawablePadding="-2dip"
+                    android:drawableTop="@drawable/tab_setting_bg"
+                    android:onClick="onTabBtnClick"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="5dip"
+                    android:scaleType="matrix"
+                    android:text="@string/bottom_btn_setting"
+                    android:textColor="@color/botton_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bar" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_matching" />
+    </RelativeLayout>
+
+</RelativeLayout>

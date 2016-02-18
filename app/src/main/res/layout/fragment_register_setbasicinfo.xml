@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setAvatarLL"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/avatarTipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/basic_info_set_avatar"
+            android:textColor="@color/colorLightBlueText"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <com.ucan.app.ui.view.CircularImage
+            android:id="@+id/setAvatarIm"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setNicknameLL"
+        android:layout_width="@dimen/FormWidth"
+        android:layout_height="250dp"
+        android:layout_below="@id/setAvatarLL"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/setNickNameEtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="设置英文名"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:met_baseColor="#0056d3"
+            app:met_clearButton="true"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="#982360" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/setHomeTownEtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:hint="设置家乡"
+            android:textSize="14sp"
+            app:met_baseColor="#0056d3" />
+
+        <RadioGroup
+            android:id="@+id/setGenderRG"
+            android:layout_width="@dimen/FormWidth"
+            android:layout_height="@dimen/SmallListHeight"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/setMaleRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/basic_info_male"
+                android:textColor="@color/black_trans" />
+
+            <RadioButton
+                android:id="@+id/setFemaleRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/basic_info_female"
+                android:textColor="@color/black_trans" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/basic_info_set_grender_tip"
+            android:textColor="@color/black_trans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/preBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="@string/pre_btn" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/finishBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="@string/finish_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/licenseRL"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/licenseTipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_license_tip" />
+
+        <TextView
+            android:id="@+id/licenseTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/licenseTipTv"
+            android:layout_toRightOf="@id/licenseTipTv"
+            android:text="@string/register_license"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

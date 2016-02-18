@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffe94729</color>
+    <color name="colorPrimaryDark">#ffd70040</color>
+    <color name="colorAccent">#ffff4081</color>
+    <color name="colorBaseBorder">#330056d3</color>
+    <color name="colorLightBlueText">#440056d3</color>
+    <color name="dialog_background">#fffbf6f2</color>
+    <color name="text_content">#ffa19d94</color>
+    <color name="top_bar">#ffe94729</color>
+    <color name="top_bar_text">#ffffffff</color>
+    <color name="top_bar_dark">#ff545454</color>
+    <color name="blue">#ff169aff</color>
+    <color name="white">#ffffffff</color>
+    <color name="form_bg">#33ffffff</color>
+    <color name="white_trans">#22ffffff</color>
+    <color name="black_trans">#33000000</color>
+    <color name="default_color">#ff000000</color>
+    <color name="main_color">#ffe94729</color>
+    <color name="action_bar_trans">#99ff0000</color>
+    <color name="text_btn">#ffff0000</color>
+    <color name="text_desc">#ffbebbb4</color>
+    <color name="text_title">#ff5f5f5f</color>
+    <color name="dialog_btn_normal">#fffbf6f2</color>
+    <color name="dialog_btn_press">#ffece5df</color>
+    <color name="dialog_divider">#ffe8e0da</color>
+    <color name="devideline_listview">#ffe5e2d4</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="dialog_item_press">#ffece5df</color>
+    <color name="bg_input_trans">#00000000</color>
+    <color name="bg_button_trans">#ffffffff</color>
+    <color name="top_bar_bg_button_trans">#00000000</color>
+    <color name="light_border">#55ffffff</color>
+    <color name="user_level1_Plastic">#ff708090</color>
+    <color name="user_level2_CadetBlue">#ffbbffff</color>
+    <color name="user_level3_Gold">#ffffd700</color>
+    <color name="user_level4_Gold">#ffffd700</color>
+    <color name="user_level5_Gold">#ffffd700</color>
+    <color name="user_level6_Gold">#ffffd700</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="common_bottom_bar_normal_bg">#ffffff</color>
+    <color name="bottom_button_text_color">#cdcdcd</color>
+    <color name="text_disabled">#ffa8a8a8</color>
+    <color name="female_pink">#ffffc0cb</color>
+
+    <item name="menu_pressed_color" type="color">@color/small_line_color</item>
+
+    <color name="small_line_color">#26000000</color>
+    <color name="common_popup_menu_list_divider">#ff191919</color>
+
+    <!-- PickerUI lines colors -->
+    <color name="lines_panel_pickerui">#ffaaaaaa</color>
+    <color name="background_picker">#ff579fff</color>
+    <!-- PickerUI panel colors -->
+    <color name="background_panel_pickerui">#fffafafa</color>
+
+    <!-- PickerUI items colors -->
+    <color name="text_center_pickerui">#ff000000</color>
+    <color name="text_no_center_pickerui">#aaa</color>
+
+    <drawable name="list_item_selected">#aaaaaa</drawable>
+
+    <!-- PickerUI shadow colors -->
+    <color name="grey1">#00CCCCCC</color>
+    <color name="grey2">#10CCCCCC</color>
+    <color name="grey3">#20CCCCCC</color>
+    <color name="grey4">#30CCCCCC</color>
+    <color name="grey5">#50747474</color>
+
+
+</resources>

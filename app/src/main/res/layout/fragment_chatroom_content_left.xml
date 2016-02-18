@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.ucan.app.ui.ptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_rotate_header_with_view_group_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/fragment_rotate_header_with_view_group_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp" >
+            <ListView
+                android:id="@+id/meeting_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:dividerHeight="10.0dp"
+                android:gravity="center"
+                android:isScrollContainer="false"
+                android:listSelector="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/empty_meeting_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:singleLine="false"
+                android:text="@string/ec_empty_inter_phone"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.ucan.app.ui.ptr.PtrClassicFrameLayout>
+
+</RelativeLayout>

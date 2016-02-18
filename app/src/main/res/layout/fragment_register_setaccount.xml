@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/FormWidth"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/setAccountEtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="14sp"
+            app:met_baseColor="#0056d3"
+            app:met_clearButton="true"
+            app:met_floatingLabel="normal"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="#982360" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/setVerifycodeEtv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="验证码"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="14sp"
+                app:met_baseColor="#0056d3"
+                app:met_clearButton="true"
+                app:met_floatingLabel="normal"
+                app:met_maxCharacters="4"
+                app:met_primaryColor="#982360" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more"
+                rv_centered="true"
+                android:layout_width="0dp"
+                android:layout_height="?android:actionBarSize"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-7dp"
+                android:layout_weight="1.5">
+
+                <Button
+                    android:id="@+id/getVerifycodeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/SmallButtonHeight"
+                    android:background="#1E88E5"
+                    android:text="@string/get_verifycode"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="@string/back_btn" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="@string/next_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
